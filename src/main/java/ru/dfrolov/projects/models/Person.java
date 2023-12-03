@@ -10,7 +10,7 @@ public class Person {
     @NotEmpty(message = "Не должно быть пустым")
     @Size(min = 2,max = 100,message = "Должно быть от 2 до 100 символов")
     private String fio;
-    @Min(value = 1, message = "Должно быть больше 0")
+    @Min(value = 1900, message = "Должно быть больше 1899")
     private int birthYear;
 
     public Person() {
